@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorest Company Contact Page</title>
+    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/main-container.css">
+   
+  <link rel="stylesheet" href="./css/contact-form.css">
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            </li>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./products.html">Products</a>
+            </li>
+            <li>
+                <a href="./about.html">About</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="./FAQs.html">FAQs</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="./index.html">Logo</a>
+            </li>
+            <li class="hideOnMobile">
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="hideOnMobile">
+                <a href="./products.html">Products</a>
+            </li>
+            <li class="hideOnMobile">
+                <a href="./about.html">About</a>
+            </li>
+            <li class="hideOnMobile">
+                <a href="./contact.html">Contact</a>
+            </li>
+            <li class="hideOnMobile">
+                <a href="./FAQs.html">FAQs</a>
+            </li>
+            <li class="menu-button" onClick=showSidebar()>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </li>
+        </ul>
+    </nav>
+
+<div class="contact-container">
+  
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title">
+          <h2>Get in Touch</h2>
+          <hr>
+        </div>
+
+        <input type="hidden" name="access_key" value="063fc05c-bf18-45f8-a519-c5287badec6b">
+        <input type="hidden" name="subject" value="Contact Form Submission">
+
+        <input type="text" name="firstname" required placeholder="Your First Name" class="contact-input">
+        <input type="text" name="lastname" required placeholder="Your Last Name" class="contact-input">
+        <input type="email" name="email" required placeholder="Your Email" class="contact-input">
+        <input type="text" name="phone" required placeholder="Your Phone Number" class="contact-input">
+        <textarea name="message" required placeholder="Type your Message" class="contact-input"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="footer">
+        <p>&copy; 2025 Decorest Company Limited</p>
+    </div>
+ 
+
+    <div class="contact-right">
+      <img src="./img/contact.png" alt="contact">
+    </div>
+  </div>
+    </body>
+    </html>
+
+    

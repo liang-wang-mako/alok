@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Product Detail</title>
+    <link
+      rel="stylesheet"
+      href="./css/site.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/nav.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/product-detail.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+          <li onclick=hideSidebar()>
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+          </li>
+          <li>
+              <a href="./index.html">Home</a>
+          </li>
+          <li>
+              <a href="./products.html">Products</a>
+          </li>
+          <li>
+              <a href="./about.html">About</a>
+          </li>
+          <li>
+              <a href="./contact.html">Contact</a>
+          </li>
+          <li>
+              <a href="./FAQs.html">FAQs</a>
+          </li>
+      </ul>
+      <ul>
+          <li>
+              <a href="./index.html">Logo</a>
+          </li>
+          <li class="hideOnMobile">
+              <a href="./index.html">Home</a>
+          </li>
+          <li class="hideOnMobile">
+              <a href="./products.html">Products</a>
+          </li>
+          <li class="hideOnMobile">
+              <a href="./about.html">About</a>
+          </li>
+          <li class="hideOnMobile">
+              <a href="./contact.html">Contact</a>
+          </li>
+          <li class="hideOnMobile">
+              <a href="./FAQs.html">FAQs</a>
+          </li>
+          <li class="menu-button" onClick=showSidebar()>
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+          </li>
+      </ul>
+  </nav>
+    <div class="product-detail-container">
+      <div class="product-images">
+        <div class="main-image">
+          <img
+            src="https://th.bing.com/th/id/OIP.xprvJaf7adx1_O7v1UTDagHaHa?w=199&h=198&c=7&r=0&o=5&pid=1.7"
+            alt="Product Main Image"
+            id="mainImage"
+          />
+        </div>
+        <div class="thumbnail-images">
+          <img
+            src="https://th.bing.com/th/id/OIP.xprvJaf7adx1_O7v1UTDagHaHa?w=199&h=198&c=7&r=0&o=5&pid=1.7"
+            alt="Thumbnail 1"
+            class="thumbnail active"
+            onclick="changeMainImage(this.src)"
+          />
+          <img
+            src="https://th.bing.com/th/id/OIP.xprvJaf7adx1_O7v1UTDagHaHa?w=199&h=198&c=7&r=0&o=5&pid=1.7"
+            alt="Thumbnail 2"
+            class="thumbnail"
+            onclick="changeMainImage(this.src)"
+          />
+          <img
+            src="https://th.bing.com/th/id/OIP.xprvJaf7adx1_O7v1UTDagHaHa?w=199&h=198&c=7&r=0&o=5&pid=1.7"
+            alt="Thumbnail 3"
+            class="thumbnail"
+            onclick="changeMainImage(this.src)"
+          />
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h1>Product Name</h1>
+        <h2>Ginger Rush</h2>
+        <div class="product-meta">
+          <span class="price">$3.75</span>
+          <span class="stock">In Stock</span>
+          <div class="rating">
+            ★★★★☆
+            <span class="review-count">(145 reviews)</span>
+          </div>
+        </div>
+
+        <div class="product-description">
+          <h2>Description</h2>
+          <p>
+            A complete description of the product can be found here.  This is a thorough rundown of the features, advantages, and technical details of the product.
+
+          </p>
+        </div>
+
+        <div class="product-specifications">
+          <h2>Specifications</h2>
+          <ul>
+            <li><strong>Brand:</strong>Ginger Rush</li>
+            <li><strong>Category:</strong> Technology</li>
+            <li><strong>SKU:</strong> PRD-001</li>
+            <li><strong>Weight:</strong> 0.4L</li>
+          </ul>
+        </div>
+    <script src="./js/nav.js"></script>
+    <script src="./js/product-detail.js"></script>
+  </body>
+</html>
